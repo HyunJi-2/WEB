@@ -1,0 +1,17 @@
+body {margin:0;}
+a {color:black;text-decoration:none;}
+a:focus, a:active, a:hover {text-decoration:underline;}
+h1 {margin:0;padding:20px;border-bottom:1px solid gray;font-size:45px;text-align:center;}
+ol {border-right:1px solid gray;width:100px;margin:0;padding:20px;}
+em {font-weight:bold;}
+.on, .on a {color:red;}
+p + p {margin-top:45px;}
+#grid {display:grid;grid-template-columns:150px 1fr;}
+#grid ol {padding-left:33px;}
+#grid #article {padding:0 25px;}
+
+@media(max-width:800px){
+    h1 {border-bottom:none;}
+    ol {border-right:none;}
+    #grid {display:block;}
+}

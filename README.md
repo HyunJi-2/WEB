@@ -104,3 +104,36 @@ HTML, CSS, JavaScript 기초다지기!
   + 글목록 ajax로 구현하기
   + fetch API polyfill
   + 수업을 마치며
+
+
+추가로 [마크다운사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601) 을 보며 익히기
+
+앞으로는 마크다운에 정리해서 올리기로 했다
+
+그런 의미에서
+_약한강조 em_
+__강한강조 strong__
+
+사실 배운 목차도 생활코딩에 연결해놔서 안써도 되는듯 했지만 마크다운에 리스트를 적용해보고자 써봤다 _히히_
+
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+  </head>
+  <body>
+    <header>
+      Header
+    </header>
+    <section>
+       Container
+       <p>코드도 한번 써보고 ㅎ.ㅎ</p>
+    </section>
+    <footer>
+      Footer
+    </footer>
+  </body>
+  </html>
+  
+  * * *

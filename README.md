@@ -105,35 +105,88 @@ HTML, CSS, JavaScript, Ajax 기초다지기!
   + fetch API polyfill
   + 수업을 마치며
 
-  * * *
+* * *
+
+다시 짚고 넘어가기
+-----------------
+
+**JavaScript**
+
+method : 객체 내부에 들어가는 함수
+
+UI : User가 목적 달성을 위해 마주하는 조작 체계. User Interface
+
+API : 프로그래머의 개발을 돕기 위해 마련된 도구 및 환경. Application Programming Interface. 프로그래머와 컴퓨터의 소통을 돕는 것. 코드 Library는 API에 소속 되었다고 할 수 있다.
+
+DOM : Document Object Model
+
+순서가 있게 정보를 저장하는 것이 Array이라면 순서 없이 정보를 저장하는 것이 객체 Object. 배열은 [] , 객체는 {}
+
+    ver coworkers = {warrior : egoing}
+    //               key값 : value 값 = property 속성값
+    
+    var Object = {
+      key : value,
+      key1 : value1,
+      key2 : value2,
+      ["ke y3"] : value3 // 띄워쓰기가 있을 경우
+    }
+    document.write(Object.key1);      // "." : 엑세스오퍼레이터. 객체에 접근하기 위한 것
+    document.write(Object["ke y3"]);  // 띄어쓰기가 되어 있는 것은 오브젝트 오퍼레이터로 못불러오고 array와 비슷하게 불러온다
+
+객체 내부에서 모든 데이터를 뽑아내야 할때 반복문을 이용해서 생산적으로 데이터를 꺼내자
+
+    var coworkers = {
+      "programmer" : "egoing",
+      "designer" : "leezche"
+    };
+    for(var key in coworkers){
+      document.write(key + ' : ' + coworker[key] + '<br>');
+    }
+
+* 객체 ([다른 사이트 추가 참고 함](https://www.zerocho.com/category/JavaScript/post/572c6f759a5f1c4db2481ee3))
+  + 함수 Function
+  + 배열 Array
+  + 함수도 배열도 아닌 객체
+
+객체 안에 객체가 속성값으로 들어갈수 있음
+
+    var zero = {
+      body : {
+        width: 66,
+        height: 100
+      }
+    }
+    zero.body.height;   // 100
+
+객체의 속성을 삭제할 수도 있음
+    
+    delete zero.body.height;
+    zero.body;  // {width:66}
+
+'new'라는 키워드로 객체를 생성할수 있다. 그러나 그냥 바로 {} 대괄호를 사용한 객체 생성을 권장하고 있다. 이것이 객체 리터럴(literal)
+
+    var zero = new boject();
+    zero.firstname = 'zero';
+    zero.lastname = 'Lee';
+    
+    var zeroLiteral = {
+      firstname : 'zero',
+      lastname : 'Lee'
+    }
+
+**Ajax**
+
+Asynchronous Javascript And Xml (비동기 자바스크립트와 XML)
+
+    fetch('javascript')
+    client -> server
+
+
+* * *
 
 추가로 [마크다운사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601) 을 보며 익히기
 
 앞으로는 마크다운에 정리해서 올리기로 했다
 
-그런 의미에서
-_약한강조 em_
-__강한강조 strong__
-
 사실 배운 목차도 생활코딩에 연결해놔서 안써도 되는듯 했지만 마크다운에 리스트를 적용해보고자 써봤다 _히히_
-
-    <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-      <meta charset="utf-8">
-      <title>TEST</title>
-    </head>
-    <body>
-      <header>
-        Header
-      </header>
-      <section>
-         Container
-         <p>코드도 한번 써보고 ㅎ.ㅎ</p>
-      </section>
-      <footer>
-        Footer
-      </footer>
-    </body>
-    </html>
-

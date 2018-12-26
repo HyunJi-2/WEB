@@ -95,7 +95,7 @@ HTML, CSS, JavaScript, Ajax 기초다지기!
   + 라이브러리와 프레임워크
   + UI & API
   + 수업을 마치며
-* WEB2 - AJAX
+* WEB2 - Ajax
   + 수업의 목적
   + 실습환경 준비
   + fetch API
@@ -165,6 +165,8 @@ DOM : Document Object Model
     zero.body;  // {width:66}
 
 'new'라는 키워드로 객체를 생성할수 있다. 그러나 그냥 바로 {} 대괄호를 사용한 객체 생성을 권장하고 있다. 이것이 객체 리터럴(literal)
+
+이유 : 가독성이 좋아짐, 속도가 더 빠름, 오버라이딩에 따른 예방
 
     var zero = new boject();
     zero.firstname = 'zero';

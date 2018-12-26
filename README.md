@@ -3,7 +3,7 @@ WEB
 
 [생활코딩](https://opentutorials.org/course/3084) 을 보고
 
-HTML, CSS, JavaScript 기초다지기!
+HTML, CSS, JavaScript, Ajax 기초다지기!
 
 
 왜? 왜 기초부터 다시?
